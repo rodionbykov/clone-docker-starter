@@ -1,3 +1,7 @@
 # clone-docker-starter
 
-Docker compose project for quick spin of Clone project. Includes Lucee and MySQL.
+## Docker environment for Clone project
+
+Code for Clone is open-source and hosted on GitHub: https://github.com/rodionbykov/clone
+
+Requirements are MySQL and Lucee

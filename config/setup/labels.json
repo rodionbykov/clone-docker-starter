@@ -1,0 +1,30 @@
+{
+  "meta": {
+    "title": {
+      "ru": "Проект Клон",
+      "en": "Project Clone"
+    }
+  },
+  "home": {
+    "title": {
+      "ru": "Добрый день!",
+      "en": "Hello, World!"
+    },
+    "welcome": {
+      "ru": "Clone приветствует вас",
+      "en": "Welcome to the Clone"
+    }
+  },
+  "menu": {
+    "title": {
+      "ru": "Клон",
+      "en": "Clone"
+    }
+  },
+  "layout": {
+    "copyright": {
+      "ru": "&copy; $YEAR$ Company, Inc.",
+      "en": "&copy; $YEAR$ Company, Inc."
+    }
+  }
+}

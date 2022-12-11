@@ -1,0 +1,25 @@
+services:
+  mysql:
+    container_name: clone-mysql
+    image: mysql    
+    environment:
+      - MYSQL_DATABASE=clone      
+      - MYSQL_ROOT_PASSWORD=12345
+    ports:
+      - 8806:3306
+    volumes:
+      - ./db:/var/lib/mysql
+      - ./config/docker-sql/init.sql:/docker-entrypoint-initdb.d/init.sql
+  cfml:
+    container_name: clone-cfml
+    image: lucee/lucee
+    volumes: 
+      - ./www:/var/www
+      - ./config/server.xml:/usr/local/tomcat/conf/server.xml
+      - ./config/password.txt:/opt/lucee/server/lucee-server/context/password.txt
+    ports:
+      - 8808:8888
+    depends_on:
+      - mysql
+    links:
+      - mysql
